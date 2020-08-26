@@ -1,0 +1,10 @@
+body {
+    color: var(--main-color);
+    background-color:var(--main-color);
+  }
+  
+  body button {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--main-color);
+  }
