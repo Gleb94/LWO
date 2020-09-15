@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="links">
+            <a data-mode="clock" class="clock selected" href="#">clock</a>
+            <a data-mode="stopwatch" class="stopwatch" href="#">stopwatch</a>
+            <a data-mode="timer" class="timer" href="#">timer</a>
+        </div>
+        <div class="output"></div>
+        <div class="buttons">
+            <button class="start" hidden>Start</button>
+            <button class="stop " hidden>Stop</button>
+            <button class="reset" hidden>Reset</button>
+        </div>
+        <div class="watch">
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <form name=stopwatch>
+        <input type=button value="Обнулить" onclick="ClearСlock()">
+        <input name=stopwatch size=10 value="00:00:00">
+        <input type=button value="Запуск/Остановить" onclick="StartStop()">
+    </form>
+    <input type="text" name="time" id="time">
+    <button id="button">Запустить</button>
+    <div id="timer"></div>
+</body>
+
+</html>
